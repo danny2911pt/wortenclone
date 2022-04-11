@@ -1,0 +1,49 @@
+.mother
+{
+    display: inline-block;
+    width: 20%;
+    margin-left: 1%;
+
+}
+    .filha
+    {
+        display: inline-block;
+        width: 100%;
+
+    }
+
+.carta
+{
+    display: block;
+    padding-left: 1%;
+    padding-right: 2%;
+    border-left: #999999 3px solid;
+    border-right: #999999 3px solid;
+}
+    .titulo
+    {
+        display: table;
+        border-top: 3px solid #999999;
+        width: 95.4%;
+    }
+    .imagem
+    {
+        border-top: #999999 3px solid;
+        min-height: 350px;
+        vertical-align: middle;
+    }
+        .imagem img
+        {
+            height: auto;
+            width: 100%;
+        }
+    .cat
+    {
+        border-top: #999999 3px solid;
+    }
+    .desc
+    {
+        text-align: justify;
+        border-top: 3px solid #999999;
+        border-bottom: 3px solid #999999;
+    }

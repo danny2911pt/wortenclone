@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi');
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+/* Formatacao do documento */
+*{ margin: 0; padding: 0; }
+header{
+	width: 100%;
+}
+#brand{
+	display: table;
+	background-color: #e41a15;/* Vermelho Wortas */
+	color:#fff; /* Branco */
+	width: 70%;
+	padding:1% 15%;
+}
+#brand a{ 
+	color:#fff; 
+	font-weight: bold;
+	font-family: 'Baloo Thambi', cursive;
+	font-size: 25px;
+	text-decoration: none;
+}
+#carrinho a{
+	font-weight: normal;
+	color:#fff;
+	font-family: verdana;
+	font-size: 18px;
+	text-decoration: none; 
+}
+#carrinho a:hover{ cursor: pointer; }
+
+#brand a:hover{ cursor: pointer; }
+#logotipo, #pesquisa, #carrinho{ 
+	display: table-cell; 
+	vertical-align: middle;
+}
+#logotipo{
+	width: 20%;
+	font-weight: bold;
+	font-family: 'Baloo Thambi', cursive;
+	font-size: 25px;
+}
+#pesquisa{
+	width: 65%;
+}
+#pesquisa input{
+	padding: 1%;
+	border-top-left-radius: 24px;
+	border-bottom-left-radius: 24px; 
+	border:none;
+	width: 78%;
+}
+#pesquisa input[type="submit"]{
+	padding: 1%;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px; 
+	border-top-right-radius: 24px;
+	border-bottom-right-radius: 24px;
+	border:none;
+	width: 18%;
+	background-color: #fff;
+	color: #333;
+}
+
+#carrinho{
+	width: 15%;
+	text-align: right;
+	font-size: 20px;
+}
+#menus{
+	display: table;
+	background-color: #FFF;
+	color:#333; 
+	width: 70%;
+	padding:1% 15% 0% 15%;
+}
+#menus ul li{ display: inline; margin-right: 2%;}
+#menu, #conta{ display: table-cell; vertical-align: middle; }
+#menu{
+	width: 70%;
+	font-family: 'Baloo Thambi', cursive;
+}
+#menus a{
+	color:#333;
+	text-decoration: none;
+}
+#menu ul li{ color:#999; }
+#conta{ 
+	width: 30%;
+	text-align: right;
+}
+#conta a:hover{ color: #e41a15; }
+#menu ul li a:hover{
+	border-bottom-color: #e41a15;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+}
+/* Banners - Compromissos */
+#banners{
+	width: 100%;
+	min-height: 350px;
+	background-color: yellow;
+}
+#compromissos{
+	display: table;
+	/*background-color: #e41a15;/* Vermelho Wortas */
+	color:#333; /* Cinza */
+	width: 70%;
+	padding:1% 15%;
+}
+.compromisso{
+	display: table-cell;
+	width: 25%;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.compromisso span{
+	color: #e41a15;
+	font-size: 26px;
+}
+.compromisso a{
+	text-decoration: none;
+	color:#666;
+}
+.compromisso a:hover{
+	color:#e41a15;
+}
+/* Conteudos / produtos */
+#contentor{
+	background-color: #d3d3d3;
+	width: 70%;
+	padding:1% 15%;
+	min-height: 500px;
+}
+.promocoes, .tendencias{
+	width: 100%;
+	padding:0.5% 0%;
+	margin-bottom: 1%;
+}
+.promocao, .tendencia{
+	float: left;
+	width: 23%;
+	
+	margin:1%;
+	box-shadow: 1px 1px #999; /* Sombra caixa X Y cor */
+	min-height: 100px;
+	background-color: #fff;
+}
+.descricao{ width: 90%; padding: 5%; }
+.promocao img{ width: 100%; height: auto;}
+.promocao h3{ 
+	color: #e41a15;
+	text-transform: uppercase;
+	margin-bottom: 0.5%; 
+}
+.promocao p{
+	color: #333;
+	font-size: 14px;
+	margin-bottom: 0.5%;
+}
+.promocao h5{
+	color: #999;
+	font-size-adjust: 10px;
+}
+.promocao:hover{
+	cursor: pointer;
+	box-shadow: none;
+}
+
+.destaques{
+	width: 100%;
+	padding:0.5% 0%;
+	margin-top:0.5%;
+	margin-bottom: 1%;
+	box-shadow: 1px 1px #999;
+	background-color: #fff;
+	min-height: 100px;
+}
+.destaques a{
+	color:#333;
+	text-decoration: none;
+}
+.destaque{
+	float: left;
+	width: 23%;
+	margin:1%;
+}
+.destaque:hover{
+	cursor: pointer;
+}
+.destaque:hover .descricao p{
+	color:#e41a15;
+}
+.destaque img{ width: 100%; height: auto; }
+.precosdestaque{
+	width: 100%;
+	display: table;
+	margin-top:1.5%;
+}
+.precoatual{
+	width: 30%;
+	color:#e41a15;
+	font-size:18px;
+	font-weight: bolder;
+	text-align: left;
+	display: table-cell;
+}
+.precoanterior{
+	width: 70%;
+	text-align: left;
+	font-size: 14px;
+	color:#999;
+	text-decoration: line-through;
+	display: table-cell;
+}
+
+.titulo_tendencia{
+	font-size: 14px;
+	color:#333;
+	font-weight: bold;
+	width: 90%;
+	margin:1% 5%;
+}
+.titulo_tendencia span{
+	color:#e41a15;
+	font-size: 12px;
+	font-weight: normal;
+}
+.texto_tendencia{
+	font-size:12px;
+	color:#333;
+	width: 90%;
+	margin:1% 5%;
+}
+.tendencia img{ width: 100%; height: auto; }
+
+.titulos_seccoes{
+	width: 100%;
+	display: table;
+}
+.titulo_seccao{
+	color:#333;
+	text-transform: uppercase;
+	display: table-cell;
+	width: 70%;
+	text-align: center;
+}
+.link_seccao{
+	text-transform: uppercase;
+	color:#333;
+	display: table-cell;
+	width: 30%;
+	text-align: right;
+	font-size:12px;
+}
+.link_seccao a{
+	text-decoration: none;
+	color: #333;
+}
+.link_seccao a:hover{
+	color:#666;
+}
+.link_seccao a span{
+	color:#e41a15;
+}
+.newsletter{
+	background-color: #e41a15;
+	width: 99%;
+	padding: 0.5%;
+	color:#fff;
+	display: table;
+	margin-bottom: 0.5%;
+}
+.news_icon, .news_text, .news_subscricao{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.news_icon{
+	width: 20%;
+	font-size: 5em;
+}
+.news_text{
+	text-align: left;
+	width: 40%;
+}
+.news_subscricao{
+	width: 40%;
+}
+.news_subscricao input{
+	padding: 2%;
+	border-top-left-radius: 24px;
+	border-bottom-left-radius: 24px; 
+	border:none;
+	width: 76%;
+}
+.news_subscricao input[type="submit"]{
+	padding: 2%;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px; 
+	border-top-right-radius: 24px;
+	border-bottom-right-radius: 24px;
+	border:none;
+	width: 16%;
+	background-color: #fff;
+	color: #333;
+}
+.news_subscricao label{ font-size: 10px; }
+.news_subscricao label a{ 
+	font-size: 10px;  
+	text-decoration: none;
+	color:#fff;
+}
+.condicoes{
+	background-color: #fff;
+	width: 99%;
+	padding: 1% 0.5%;
+	color:#333;
+	display: table;
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;
+}
+.condicao_icon{
+	display: table-cell;
+	width: 5%;
+	font-size: 20px;
+	color:#e41a15;
+	text-align: center;
+	vertical-align: top;
+}
+.condicao_text{
+	display: table-cell;
+	width: 20%;
+	vertical-align: top;
+}
+.condicao_text a{
+	color:#333;
+	text-decoration: none;
+}
+.condicao_text a:hover{
+	color:#e41a15;
+}
+.condicao_text a span{ color:#e41a15; }
+/* RODAPE */
+#rodawortas{
+	font-weight: bold;
+	font-family: 'Baloo Thambi', cursive;
+	font-size: 18px;
+	width: 70%;
+	padding: 1% 15%;
+	background-color: #e41a15;
+	color:#fff;
+}
+
+/* Elementos Rodape */
+footer{
+
+}
+.rodape_topo{
+	display: table;
+	width: 100%;
+	margin-bottom: 2%;
+}
+.col_rodape{
+	display: table-cell;
+	width: 20%;
+	font-size: 12px;
+}
+.col_rodape h5{ 
+	margin-bottom: 1%; 
+	font-size: 14px;
+	font-weight: bold;
+}
+.col_rodape ul li{ 
+	list-style-type: none; 
+	line-height: 2;
+}
+.social_rodape span{
+	font-size: 20px;
+	margin-right: 5%;
+}
+.rodape_baixo{
+	font-size: 12px;
+	display: table;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+.rodape_baixo_esq{
+	display: table-cell;
+	width: 70%;
+	vertical-align: top;
+	text-align: left;
+}
+.rodape_baixo_dta{
+	display: table-cell;
+	width: 30%;
+	vertical-align: top;
+	text-align: right;
+}
+.rodape_baixo_esq li{ 
+	display: inline; 
+	margin-right: 5%;
+	font-weight: bold;
+}
+/* Formatacao de Login ----------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+.loginwortas{
+	width: 50%;
+	margin: 5% auto;
+	padding:2%;
+	background-color: #e41a15;
+	color:#fff;
+	text-align: center;
+	border-radius: 12px; 
+}
+.loginwortas input{
+	padding: 1%;
+	border:none;
+	border-radius: 12px;
+	width: 100%;
+	margin-bottom: 2%;
+}
+.loginwortas input[type="submit"]{
+	width: 102%;
+	background-color: #fff;
+	color:#e41a15;
+	padding-top:2%;
+	padding-bottom: 2%;
+	font-weight: bolder;
+	font-size:24px;
+}
+/* ------------------- Formatar Logado --------------------- */
+#conta table{ width: 100%; }
+#conta table td{ width: 50%; text-align: center; }
+#conta input{
+	border:0;
+	color:#e41a15;
+	background-color: #fff;
+}
+#conta input:hover{
+	cursor: pointer;
+	background-color: #e41a15;
+	color:#fff;
+}
+/*--------------------------- FICHA PRODUTO -----------------*/
+#fichaprd{
+	display: table;
+	width: 100%;
+}
+.fichaprd_foto{
+	display: table-cell;
+	width: 48%;
+	padding: 1%;
+}
+.fichaprd_foto img{
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+.fichaprd_dados{
+	display: table-cell;
+	width: 50%;
+	vertical-align: top;
+}
+
+#listacompras{
+	display: table;
+	width: 100%;
+	margin-bottom: 2%;
+}
+#listaitems{
+	display: table-cell;
+	width: 60%;
+}
+#totalcompra{
+	display: table-cell;
+	width: 40%;
+}
+/* lista de artigos no carrinho */
+.itemlista{
+	width: 100%;
+	margin-bottom: 0.5%;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: #e41a15;
+}
+.itemlista table td{
+	width: 20%;
+	text-align: left;
+}
+.itemlista input{ width: 50%; }
+.itemlista input[type="submit"]{
+	background-color: #e41a15;
+	color:#fff;
+	width: 50%;
+	padding: 2%;
+}
+
+/*------------ TALAO --------------*/
+#talao{
+	width: 80%;
+	padding:2% 5%;
+	margin:auto;
+	background-color: #fff;
+	box-shadow: 3px 3px #999;
+}
+.itemtalao{
+	display: table;
+	border-bottom-color: #e41a15;
+	border-bottom-style: dotted;
+	border-bottom-width: thin;
+	width: 100%;
+	margin-bottom: 2%;
+}
+.itemnome{
+	display: table-cell;
+	width: 70%;
+	text-align: left;
+}
+.itemvalor{
+	display: table-cell;
+	width: 30%;
+	text-align: right;
+}
+.totaltalao{
+	width: 100%;
+	text-align: right;
+	font-weight: bold;
+	color:#e41a15;
+}
+#talao input{
+	width: 100%;
+	margin:auto;
+	margin-top: 3%;
+	padding: 3%;
+	background-color: #e41a15;
+	color:#fff;
+	border:0;
+}
+#talao h4{
+	color:#e41a15;
+	font-size: 25px;
+	font-family: 'Baloo Thambi', cursive;
+	margin-bottom: 3%;
+}
+.meiopagamento{
+	width: 100%;
+	font-size: 12px;
+}
+
